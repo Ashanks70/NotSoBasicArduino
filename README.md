@@ -39,15 +39,15 @@ void loop() {
 
   }
 ```
-Talk about how the fade works, here....
+I limited the number of times by inserting a variable and limiting it based on the variable.
 
 ### Evidence
-[LED Fade on Arduino Create](https://create.arduino.cc/editor/helmstk1/9e044cca-43d7-4d93-885f-e6dec5b4f769/preview)
+[Limited Blink on Arduino Create](https://create.arduino.cc/editor/aengineeringj/261c9003-b5b8-4bf9-befd-18bfec091bdd/preview)
 
 ### Images
 
 ### Reflection
-
+This one was rather easy, I just had to remember some of the syntax.
 ## HelloFunctions
 
 ### Description & Code
