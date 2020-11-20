@@ -4,12 +4,12 @@
  
 ## Table of Contents
 * [Table of Contents](#TableOfContents)
-* [LED_Fade](#LED_Fade)
+* [Limited Blink](#Limited_Blink)
 * [HelloFunctions](#HelloFunctions)
 * [NewPing](#NewPing)
 ---
 
-## LED_Fade
+## Limited_Blink
 
 ### Description & Code
 Description goes here
@@ -17,14 +17,26 @@ Description goes here
 Here's how you make code look like code:
 
 ```C++
-  analogWrite(led, brightness);
+ /*
 
-  // change the brightness for next time through the loop:
-  brightness = brightness + fadeAmount;
+*/
+int times = 0;
+void setup() {
+  Serial.begin(9600);
+  pinMode(12, OUTPUT);
+}
 
-  // reverse the direction of the fading at the ends of the fade:
-  if (brightness <= 0 || brightness >= 255) {
-    fadeAmount = -fadeAmount;
+void loop() {
+  if (times < 5) {
+    digitalWrite(10, HIGH);
+
+    Serial.println(times);
+    delay(250);
+    digitalWrite(10, LOW);
+
+    delay(250);
+    times++;
+
   }
 ```
 Talk about how the fade works, here....
